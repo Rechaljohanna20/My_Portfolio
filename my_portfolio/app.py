@@ -2,8 +2,6 @@ import streamlit as st
 import base64
 import os
 
-st.write("Current working directory:", os.getcwd())
-st.write("Image exists:", os.path.exists("assets/profile.png"))
 st.set_page_config(
     page_title="Rechal Johanna | Data Analyst",
     page_icon="🧠",
@@ -19,7 +17,7 @@ def img_to_base64(path):
     except Exception:
         return None
 
-photo_b64 = img_to_base64("profile.png")
+photo_b64 = img_to_base64("my_portfolio/assets/profile.png")
 
 # ── Build photo HTML safely ───────────────────────────────────────────
 if photo_b64:
