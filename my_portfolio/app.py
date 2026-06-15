@@ -3,7 +3,7 @@ import base64
 import os
 
 st.set_page_config(
-    page_title="Rechal Johanna | Data Scientist",
+    page_title="Rechal Johanna | Data Analyst",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -17,7 +17,7 @@ def img_to_base64(path):
     except Exception:
         return None
 
-photo_b64 = img_to_base64("assets/profile.png")
+photo_b64 = img_to_base64("profile.png")
 
 # ── Build photo HTML safely ───────────────────────────────────────────
 if photo_b64:
