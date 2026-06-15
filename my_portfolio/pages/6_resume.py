@@ -47,7 +47,7 @@ with col1:
 with col2:
     st.markdown("### ⬇️ Download Resume")
 
-    resume_path = "assets/Ramakuri_Rechal_Johanna.pdf"
+    resume_path = "assets/Rechal_Johanna_Ramakuri_Resume.pdf"
 
     if os.path.exists(resume_path):
         with open(resume_path, "rb") as f:
@@ -55,13 +55,12 @@ with col2:
         st.download_button(
             label="📥 Download PDF Resume",
             data=pdf_bytes,
-            file_name="Rechal_Johanna_Resume.pdf",
+            file_name="Rechal_Johanna_Ramakuri_Resume.pdf",
             mime="application/pdf",
             use_container_width=True
         )
     else:
-        st.info("📎 Place your resume PDF at:\n`assets/Ramakuri_Rechal_Johanna.pdf`\n\nThen this button will auto-enable.")
-        st.caption("Rename your resume file or update the path in the code.")
+        st.info("📎 Place your resume PDF at:\n`assets/Rechal_Johanna_Ramakuri_Resume.pdf`\n\nThen this button will auto-enable.")
 
     st.markdown("---")
     st.markdown("### 📊 Profile Stats")
