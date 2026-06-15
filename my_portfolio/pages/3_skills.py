@@ -1,94 +1,98 @@
 import streamlit as st
 
-st.set_page_config(page_title="Skills | Rechal Johanna", page_icon="🛠️", layout="wide")
+st.set_page_config(page_title="Skills | Rechal Johanna Ramakuri", page_icon="🛠️", layout="wide")
 
 st.markdown("""
 <style>
-    .skill-category { font-size: 1.05rem; font-weight: 700; color: #7F77DD; margin: 1.2rem 0 0.5rem; }
-    .tool-badge {
-        display: inline-block; background: #1A1A2E; color: #5DCAA5;
-        border: 1px solid #5DCAA5; border-radius: 20px;
-        padding: 5px 14px; font-size: 0.85rem; margin: 4px;
-    }
+    .skill-label { font-size: 0.95rem; font-weight: 600; color: #E2E8F0; margin: 0.8rem 0 0.2rem; }
+    .skill-sub   { font-size: 0.8rem;  color: #64748B; margin-bottom: 0.3rem; }
+    .cat-header  { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;
+                   text-transform: uppercase; color: #A78BFA; margin: 1.2rem 0 0.6rem;
+                   border-bottom: 1px solid #1E293B; padding-bottom: 4px; }
+    .tool-badge  { display: inline-block; background: #0F172A; color: #34D399;
+                   border: 1px solid #065F46; border-radius: 20px;
+                   padding: 5px 14px; font-size: 0.82rem; margin: 4px; }
+    .learning-badge { display: inline-block; background: #1C1917; color: #FBBF24;
+                   border: 1px solid #92400E; border-radius: 20px;
+                   padding: 5px 14px; font-size: 0.82rem; margin: 4px; }
 </style>
 """, unsafe_allow_html=True)
 
-st.title("🛠️ Skills & Tools")
+st.title("🛠️ Skills & Tech Stack")
 st.markdown("---")
 
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown("### Programming & Query Languages")
+    st.markdown('<div class="cat-header">🐍 Core Data Science Stack</div>', unsafe_allow_html=True)
 
-    st.markdown('<div class="skill-category">Python</div>', unsafe_allow_html=True)
-    st.progress(80)
-    st.caption("Pandas, NumPy, OpenCV, Jupyter Notebook")
+    for skill, sub in [
+        ("Python",          "Pandas, NumPy, OpenCV, Scikit-learn"),
+        ("SQL / MySQL",     "Complex queries, joins, subqueries, DB design"),
+        ("Data Analysis",   "EDA, pattern recognition, 500+ records analyzed"),
+        ("MS Excel",        "Pivot tables, VLOOKUP, statistical analysis"),
+    ]:
+        st.markdown(f'<div class="skill-label">{skill} </div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="skill-sub">{sub}</div>', unsafe_allow_html=True)
 
-    st.markdown('<div class="skill-category">SQL / MySQL</div>', unsafe_allow_html=True)
-    st.progress(85)
-    st.caption("Queries, joins, subqueries, MySQL Workbench")
+    st.markdown('<div class="cat-header">🧠 AI / Gen AI</div>', unsafe_allow_html=True)
 
-    st.markdown('<div class="skill-category">MS Excel</div>', unsafe_allow_html=True)
-    st.progress(85)
-    st.caption("Pivot tables, VLOOKUP, data classification, charts")
-
-    st.markdown('<div class="skill-category">M365 — PowerApps</div>', unsafe_allow_html=True)
-    st.progress(65)
-    st.caption("App building, automation with Microsoft Power Platform")
+    for skill, sub in [
+        ("Groq API / LLM Integration",       "Built real Gen AI apps with Groq API"),
+        ("Prompt Engineering",              "Designed prompts for LLM-based outputs"),
+        ("OpenCV / Computer Vision",        "Image datasets, model validation (internship)"),
+    ]:
+        st.markdown(f'<div class="skill-label">{skill} </div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="skill-sub">{sub}</div>', unsafe_allow_html=True)
 
 with col2:
-    st.markdown("### Analytics & Visualization")
+    st.markdown('<div class="cat-header">📊 BI & Visualization</div>', unsafe_allow_html=True)
 
-    st.markdown('<div class="skill-category">Power BI</div>', unsafe_allow_html=True)
-    st.progress(75)
-    st.caption("Dashboards, DAX basics, data modeling")
+    for skill, sub in [
+        ("Power BI",     "Dashboards, DAX, data modeling"),
+        ("Tableau",      "Built dashboards for Deloitte simulation"),
+        ("Streamlit",    "Full app UI — used in Gen AI internship project"),
+        ("Matplotlib / Seaborn",  "Statistical plots, EDA visualizations"),
+    ]:
+        st.markdown(f'<div class="skill-label">{skill} </div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="skill-sub">{sub}</div>', unsafe_allow_html=True)
 
-    st.markdown('<div class="skill-category">Tableau</div>', unsafe_allow_html=True)
-    st.progress(70)
-    st.caption("Interactive dashboards (Deloitte simulation)")
+    st.markdown('<div class="cat-header">⚙️ Dev & Workflow Tools</div>', unsafe_allow_html=True)
 
-    st.markdown('<div class="skill-category">Data Analysis & Interpretation</div>', unsafe_allow_html=True)
-    st.progress(85)
-    st.caption("Pattern recognition, 500+ records analyzed")
-
-    st.markdown('<div class="skill-category">Google Sheets</div>', unsafe_allow_html=True)
-    st.progress(80)
-    st.caption("Formulas, collaboration, data tracking")
+    for skill, sub in [
+        ("GitHub / Version Control",  "Repos, commits, project management"),
+        ("VS Code",                   "Primary IDE for all projects"),
+        ("Jupyter Notebook",          "Data exploration, ML experiments"),
+        ("M365 PowerApps",            "App automation, Microsoft ecosystem"),
+    ]:
+        st.markdown(f'<div class="skill-label">{skill} </div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="skill-sub">{sub}</div>', unsafe_allow_html=True)
 
 st.markdown("---")
 
-# --- Conceptual Skills ---
-st.markdown("### 📚 Core Concepts")
+# ── Concepts ──────────────────────────────────────────────────────────
+st.markdown("### 📚 Data Science Concepts")
 concepts = [
-    "Database Management", "Data Collection & Validation",
-    "Research & Information Synthesis", "OOP Concepts",
-    "Analytical Problem Solving", "Model Accuracy Evaluation",
-    "Image Dataset Processing", "Business Intelligence",
-    "Forensic Data Analysis", "Technical Documentation"
+    "Supervised Learning", "Classification & Regression",
+    "Model Evaluation & Validation", "Feature Engineering",
+    "EDA & Statistical Analysis", "Data Cleaning & Wrangling",
+    "Database Management", "Computer Vision",
+    "LLM Integration", "Business Intelligence",
+    "Research Methodology", "OOP in Python",
 ]
-cols = st.columns(5)
+cols = st.columns(4)
 for i, c in enumerate(concepts):
-    with cols[i % 5]:
+    with cols[i % 4]:
         st.markdown(f'<span class="tool-badge">{c}</span>', unsafe_allow_html=True)
 
 st.markdown("---")
 
-# --- Tools Ecosystem ---
-st.markdown("### 🧰 Tools Ecosystem")
-c1, c2, c3, c4 = st.columns(4)
-with c1:
-    st.markdown("**Development**")
-    st.markdown("- Jupyter Notebook\n- VS Code\n- MySQL Workbench")
-with c2:
-    st.markdown("**Data & Analytics**")
-    st.markdown("- Power BI\n- Tableau\n- MS Excel\n- Google Sheets")
-with c3:
-    st.markdown("**AI / CV**")
-    st.markdown("- OpenCV\n- Python ML libs\n- NumPy / Pandas")
-with c4:
-    st.markdown("**Productivity**")
-    st.markdown("- M365 PowerApps\n- GitHub\n- Google Workspace")
+# ── Currently Learning ────────────────────────────────────────────────
+st.markdown("### 🚀 Currently Levelling Up")
+learning = ["Deep Learning (TensorFlow/Keras)", "LangChain & RAG Pipelines",
+            "MLflow / Model Deployment", "Docker for ML", "AWS / Cloud Basics",
+            "Advanced Scikit-learn Pipelines"]
+for item in learning:
+    st.markdown(f'<span class="learning-badge">⚡ {item}</span>', unsafe_allow_html=True)
 
 st.markdown("---")
-st.info("💡 **Currently learning:** Advanced ML with Scikit-learn, Gen AI with LangChain, and Streamlit app development!")
