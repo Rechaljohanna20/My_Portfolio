@@ -1,134 +1,151 @@
 import streamlit as st
 
-st.set_page_config(page_title="Projects | Rechal Johanna", page_icon="🚀", layout="wide")
+st.set_page_config(page_title="Projects | Rechal Johanna Ramakuri", page_icon="🚀", layout="wide")
 
 st.markdown("""
 <style>
     .proj-card {
-        background: #1A1A2E;
-        border: 1px solid #2D2D44;
-        border-radius: 12px;
-        padding: 1.4rem;
-        margin-bottom: 1.2rem;
-        transition: border-color 0.3s;
+        background: #0F172A; border: 1px solid #1E293B;
+        border-radius: 14px; padding: 1.5rem; margin-bottom: 1.2rem;
+        transition: border-color .2s;
     }
-    .proj-card:hover { border-color: #7F77DD; }
-    .proj-title { font-size: 1.15rem; font-weight: 700; color: #FFFFFF; }
-    .proj-type  { font-size: 0.78rem; color: #5DCAA5; font-weight: 600;
-                  background: #0F2A22; border-radius: 20px; padding: 2px 10px;
-                  display: inline-block; margin-bottom: 0.5rem; }
-    .proj-desc  { font-size: 0.9rem; color: #C5CDD9; line-height: 1.6; }
-    .tag        { display: inline-block; background: #2D2D44; color: #7F77DD;
-                  border-radius: 4px; padding: 2px 8px; font-size: 0.78rem; margin: 2px; }
+    .proj-card:hover { border-color: #A78BFA; }
+    .proj-card-hero {
+        background: linear-gradient(135deg, #1E1B4B, #0F2A22);
+        border: 1.5px solid #A78BFA; border-radius: 14px;
+        padding: 1.5rem; margin-bottom: 1.2rem;
+    }
+    .proj-type  { font-size: 0.76rem; font-weight: 700; color: #34D399;
+                  background: #064E3B; border-radius: 20px;
+                  padding: 3px 12px; display: inline-block; margin-bottom: 0.6rem; }
+    .proj-type-blue { font-size: 0.76rem; font-weight: 700; color: #60A5FA;
+                  background: #1E3A5F; border-radius: 20px;
+                  padding: 3px 12px; display: inline-block; margin-bottom: 0.6rem; }
+    .proj-title { font-size: 1.15rem; font-weight: 700; color: #F1F5F9; margin-bottom: 0.4rem; }
+    .proj-desc  { font-size: 0.9rem; color: #CBD5E1; line-height: 1.7; }
+    .tag        { display: inline-block; background: #1E293B; color: #A78BFA;
+                  border-radius: 4px; padding: 2px 9px; font-size: 0.78rem; margin: 2px; }
+    .impact     { background: #0F2A22; border-left: 3px solid #34D399;
+                  border-radius: 0 8px 8px 0; padding: 8px 14px;
+                  font-size: 0.88rem; color: #34D399; margin-top: 0.8rem; }
 </style>
 """, unsafe_allow_html=True)
 
 st.title("🚀 Projects & Experience")
 st.markdown("---")
 
-# ---------- INTERNSHIPS ----------
+# ── HERO PROJECT ─────────────────────────────────────────────────────
+st.markdown("## ⭐ Featured Project — Gen AI Application")
+
+st.markdown("""
+<div class="proj-card-hero">
+    <div class="proj-type">🔥 Internship Project — 2025–2026</div>
+    <div class="proj-title">Public Transportation Delay Analysis </div>
+    <div class="proj-desc">
+        Built a full-stack <strong>Generative AI application</strong> integrating the
+        <strong>Groq API (LLM inference)</strong> with a <strong>Streamlit</strong> front-end,
+        developed entirely in <strong>VS Code</strong> with version control via <strong>GitHub</strong>.
+        The application leverages large language models to solve a real business problem —
+        enabling fast, AI-driven insights from structured data input.
+        <br><br>
+        <strong>What I did:</strong> Designed the LLM prompt architecture, built the Streamlit UI,
+        managed API authentication, handled response parsing, and deployed the app with GitHub for
+        version control and team collaboration.
+    </div>
+    <div class="impact">
+
+- **Reduced delay diagnosis time by enabling real-time root cause analysis** — identified Rain and Thunderstorm weather as the top delay drivers (30.2 min avg) and Evening Rush as peak disruption period, giving transport operators actionable intelligence to prioritize fleet deployment.
+
+- **Projected ₹1,099/month revenue uplift** through subscription gap analysis across Free, Basic, and Premium tiers, while achieving 89% on-time performance tracking across 20,000 trips and 20 Hyderabad routes.
+    </div>
+    <br>
+    <span class="tag">Groq API</span>
+    <span class="tag">Plotly</span>
+    <span class="tag">Streamlit</span>
+    <span class="tag">Python</span>
+    <span class="tag">VS Code</span>
+    <span class="tag">GitHub</span>
+    <span class="tag">Gen AI</span>
+    <span class="tag">Prompt Engineering</span>
+</div>
+""", unsafe_allow_html=True)
+
+# ── INTERNSHIP 2 ──────────────────────────────────────────────────────
 st.markdown("## 💼 Internship Experience")
 
 st.markdown("""
 <div class="proj-card">
-    <div class="proj-type">Internship — Aug 2025 to Nov 2025</div>
-    <div class="proj-title">Detection of Vegetables Using OpenCV Python — Intern Certify</div>
+    <div class="proj-type-blue">Data Science Intern - Feb,2026 -(present)</div>
+    <div class="proj-title">Data Science Intern - SocialTeK AI & ML Business Solutions</div>
     <div class="proj-desc">
-        Built a real-time vegetable detection system using <strong>OpenCV</strong> and Python.
-        Collected, processed, and analyzed image datasets for model training and validation.
-        Applied analytical thinking to evaluate model accuracy and improve detection results.
-        Documented project methodology and all technical findings.
-        <br><br>
-        <strong>Key outcomes:</strong> Improved detection accuracy through iterative model evaluation;
-        produced full technical documentation for handover.
+        Accomplished operational insight delivery for large-scale event management, measured by identifying actionable patterns across 20,000+ data points, by executing end-to-end Python pipelines covering data collection, cleaning, validation, and statistical analysis.
+Generated structured service-level reports and Power BI visualizations adopted by operations teams to support safety planning, incident response, and contingency decision-making.
+Maintained 100% data accuracy across all project deliverables and ensured on-time delivery of analytics outputs by implementing structured data validation workflows.
+Collaborated cross-functionally with team members to align analytics outputs with operational requirements and organizational timelines.
+    </div>
+    <div class="impact">
+
+- **Built and deployed a public transport delay analytics platform** as a Data Science Intern, applying Python, Pandas, and Plotly to analyze 20,000+ trip records across Hyderabad, uncovering key delay drivers — weather and peak-hour congestion — that improved on-time performance tracking to 89% across 20 routes.
     </div>
     <br>
     <span class="tag">Python</span>
-    <span class="tag">OpenCV</span>
-    <span class="tag">Image Processing</span>
-    <span class="tag">Data Analysis</span>
-    <span class="tag">Model Validation</span>
+    <span class="tag">PowerBi</span>
+    <span class="tag">Excel</span>
+     <span class="tag">Statistics</span>
+    <span class="tag">Data Analytics</span>
+    <span class="tag">Machine Learning</span>
+    <span class="tag">Groq AI Integration</span>
 </div>
 """, unsafe_allow_html=True)
 
 st.markdown("""
 <div class="proj-card">
-    <div class="proj-type">Job Simulation — March 2026</div>
+    <div class="proj-type-blue">Job Simulation — March 2026</div>
     <div class="proj-title">Data Analytics Job Simulation — Deloitte Australia (Forage)</div>
     <div class="proj-desc">
-        Completed Deloitte's official job simulation involving <strong>data analysis and forensic technology</strong>.
-        Created a professional data dashboard using <strong>Tableau</strong> to communicate business insights.
-        Used <strong>Excel</strong> to classify data, build pivot analysis, and draw meaningful business conclusions.
-        <br><br>
-        <strong>Key outcomes:</strong> Produced a client-ready Tableau dashboard;
-        demonstrated business analyst skills in a real consulting context.
+        Completed Deloitte's official data analytics & forensic technology job simulation.
+        Built a <strong>Tableau dashboard</strong> to communicate key business findings to stakeholders.
+        Used <strong>Excel</strong> to classify and segment data, and drew concrete business conclusions
+        from forensic analysis — replicating real consulting analyst work.
+    </div>
+    <div class="impact">
+    - Demonstrated consulting-grade analysis skills; produced a client-ready dashboard
+        in the style of a Big 4 data analyst.
     </div>
     <br>
     <span class="tag">Tableau</span>
     <span class="tag">Excel</span>
     <span class="tag">Data Analytics</span>
-    <span class="tag">Forensic Technology</span>
-    <span class="tag">Dashboard Design</span>
+    <span class="tag">Forensic Analysis</span>
+    <span class="tag">Business Intelligence</span>
 </div>
 """, unsafe_allow_html=True)
 
 st.markdown("---")
 
-# ---------- ACADEMIC PROJECTS ----------
-st.markdown("## 🎓 Academic Projects")
-st.caption("Add your college projects below — edit the code to fill in your actual details.")
+# ── ACADEMIC / PERSONAL PROJECTS ─────────────────────────────────────
+st.markdown("## 🎓 Academic & Personal Projects")
 
-projects = [
+placeholder_projects = [
     {
-        "title": "📌 Your Academic Project 1",
-        "type": "Academic Project — Year",
-        "desc": "Describe what you built, what problem it solved, the dataset or tools used, and the result. e.g. 'Built a sales forecasting model using Python/Pandas achieving 92% accuracy on test data.'",
-        "tags": ["Python", "Pandas", "Matplotlib", "SQL"],
-        "link": ""
+        "title": "📌 AI Based Resume Screening System ",
+        "type": "MCA Final year Project — 2026",
+        "desc": "Accomplished automated candidate-JD matching at scale, measured by sub-3-second real-time LLM inference, by engineering multi-step prompt pipelines using Claude Sonnet that extract match scores, missing keywords, and recruiter red flags.Designed end-to-end GenAI ownership — from system prompt architecture and context injection to Streamlit deployment — demonstrating full-stack Conversational AI development.",
+        "tags": ["Python", "ML", "Gemini AI API", "Pandas", "Streamlit"]
     },
     {
-        "title": "📌 Your Academic Project 2",
-        "type": "Academic Project — Year",
-        "desc": "Describe what you built. Tip: use the format → Problem → Approach → Result. Numbers make it stronger: 'Reduced processing time by 30%', 'Analyzed 10,000 records'.",
-        "tags": ["Power BI", "Excel", "Data Analysis"],
-        "link": ""
-    },
-    {
-        "title": "📌 Your Academic Project 3 (AI/ML)",
-        "type": "AI / ML Project — Year",
-        "desc": "If you have any Gen AI, ML, or NLP project add it here. This is your biggest differentiator as a fresh graduate. Even a small working model counts.",
-        "tags": ["Python", "Scikit-learn", "Gen AI", "ML"],
-        "link": ""
+        "title": "📌 Vegetable Detection Using OpenCV Python",
+        "type": "Computer Vision Project",
+        "desc": "Built a real-time vegetable detection system using OpenCV and Python, covering the full ML pipeline from data collection to model validation. Collected, cleaned, and preprocessed image datasets, then iteratively evaluated and improved detection model accuracy. Produced end-to-end technical documentation covering methodology, model performance metrics, and project findings.",
+        "tags": ["Python", "OpenCV", "Haarcascade Trainer"],
     },
 ]
 
-for proj in projects:
-    with st.container():
-        st.markdown(f"""
-        <div class="proj-card">
-            <div class="proj-type">{proj['type']}</div>
-            <div class="proj-title">{proj['title']}</div>
-            <div class="proj-desc">{proj['desc']}</div>
-            <br>
-            {''.join(f'<span class="tag">{t}</span>' for t in proj['tags'])}
-        </div>
-        """, unsafe_allow_html=True)
-
-st.markdown("---")
-st.info("💡 **Tip for recruiters:** Replace the placeholder projects above with your real college projects. Each one should follow: Problem → What you did → Tools used → Result/Impact.")
-
-# ---------- ADD PROJECT FORM ----------
-st.markdown("### ➕ Add a New Project")
-with st.expander("Click to add a project"):
-    c1, c2 = st.columns(2)
-    with c1:
-        p_title = st.text_input("Project Title")
-        p_type  = st.selectbox("Type", ["Academic", "Internship", "Personal", "Freelance"])
-        p_year  = st.text_input("Year / Duration")
-    with c2:
-        p_tools = st.text_input("Tools Used (comma separated)")
-        p_link  = st.text_input("GitHub / Demo Link (optional)")
-    p_desc = st.text_area("Project Description", height=100)
-    if st.button("Preview Entry"):
-        st.success(f"**{p_title}** ({p_type}, {p_year})\n\n{p_desc}\n\nTools: {p_tools}")
-        st.caption("Copy this info into the `projects` list in the code to make it permanent.")
+for proj in placeholder_projects:
+    st.markdown(f"""
+    <div class="proj-card" style="border: 1px dashed #334155;">
+        <div class="proj-type-blue">{proj['type']}</div>
+        <div class="proj-title" style="color:#F1F5F9;">{proj['title']}</div>
+        <div class="proj-desc" style="color:#F1F5F9;">{proj['desc']}</div>
+        <div>{''.join(f'<span class="tag" style="colour:#A78BFA">{t}</span>' for t in proj['tags'])}</div>
+    """, unsafe_allow_html=True)
