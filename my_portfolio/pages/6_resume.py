@@ -47,7 +47,7 @@ with col1:
 with col2:
     st.markdown("### ⬇️ Download Resume")
 
-    resume_path = "assets/Rechal_Johanna_Ramakuri_Resume.pdf"
+    resume_path = "my_portfolio/assets/Rechal_Johanna_Ramakuri_Resume.pdf"
 
     if os.path.exists(resume_path):
         with open(resume_path, "rb") as f:
