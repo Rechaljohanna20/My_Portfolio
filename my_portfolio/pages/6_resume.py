@@ -16,13 +16,13 @@ with col1:
 
     st.markdown("#### 🎓 Education")
     st.markdown("""
-    - **M.C.A** — SRM Institute of Science & Technology, Chennai *(2024 – Pursuing, GPA: 9.8)*
+    - **M.C.A** — SRM Institute of Science & Technology, Chennai *(2024 – 2026, GPA: 9.8(upto 3rd sem))*
     - **B.Sc Computer Science** — Sir C R Reddy College For Women, Eluru *(2021–2024, GPA: 8.0)*
     """)
 
     st.markdown("#### 💼 Experience")
     st.markdown("""
-    - **Intern – Intern Certify** *(Aug–Nov 2025)*: Detection of Vegetables Using OpenCV Python
+    - **Data Science Intern – SocialTek AI & ML Business Solutions** *(Feb 2026 - (present))*: Python, MS Excel, PowerBI, ML, Gen Ai
     - **Data Analytics Job Simulation – Deloitte Australia (Forage)** *(Mar 2026)*: Tableau dashboard, Excel analysis
     """)
 
@@ -71,4 +71,3 @@ with col2:
     st.metric("Records Analyzed", "500+")
 
 st.markdown("---")
-st.info("💡 Keep your resume updated every 3 months. Add new projects, skills, and certifications as you earn them.")
