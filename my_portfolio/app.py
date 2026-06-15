@@ -2,6 +2,8 @@ import streamlit as st
 import base64
 import os
 
+st.write("Current working directory:", os.getcwd())
+st.write("Image exists:", os.path.exists("assets/profile.png"))
 st.set_page_config(
     page_title="Rechal Johanna | Data Analyst",
     page_icon="🧠",
