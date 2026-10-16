@@ -51,7 +51,7 @@ with col2:
     info = {
         "🎓 Graduation": "MCA — 2026",
         "🏫 University": "SRM University, Chennai",
-        "📊 GPA":        "9.8 / 10 (Upto 3rd Sem)",
+        "📊 GPA":        "9.7 / 10",
         "📍 Location":   "Hyderabad, Telangana",
         "📧 Email":      "rechaljohanna@gmail.com",
         "🗣️ Languages":  "English, Telugu",
@@ -87,11 +87,11 @@ st.markdown("### 🎓 Education")
 
 st.markdown("""
 <div class="edu-card">
-    <div class="edu-title">Master of Computer Application (M.C.A)"</div>
+    <div class="edu-title">Master of Computer Application (M.C.A)</div>
     <div class="edu-inst">SRM Institute of Science & Technology, Chennai</div>
     <div class="edu-meta">
         📅 2024 – 2026 &nbsp;|&nbsp; Virtual Mode &nbsp;|&nbsp;
-        <span class="highlight">GPA: 9.8 / 10(Upto Sem 3)</span>
+        <span class="highlight">GPA: 9.7/ 10</span>
         <br><br>
         <strong>Relevant coursework:</strong> Machine Learning, Data Analytics, Deep Learning Fundamentals,
         Database Management, Research Methodology, Cloud Computing, AI Applications,
